@@ -11,7 +11,6 @@ class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-     //   view.backgroundColor = .systemYellow
         
         // Inicializacion de las View
         let vc1 = UINavigationController(rootViewController: HomeViewController())
@@ -25,7 +24,7 @@ class MainTabBarViewController: UITabBarController {
         vc3.tabBarItem.image = UIImage(systemName: "magnifyingglass")
         vc4.tabBarItem.image = UIImage(systemName: "arrow.down.to.line")
         
-        // nombres de las tab
+        // Nombres de las tab
         vc1.tabBarItem.title = TabBarSelection.home.rawValue
         vc2.tabBarItem.title = TabBarSelection.upcoming.rawValue
         vc3.tabBarItem.title = TabBarSelection.search.rawValue
