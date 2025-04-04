@@ -71,14 +71,14 @@ class TitleTableViewCell: UITableViewCell {
             titleLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ]
         
-        /* // Disable Play Button
+         // Disable Play Button
         let playButtomConstraints = [
             playButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             playButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ]
-        */
+        
         NSLayoutConstraint.activate(titlesPosterUIImageViewConstraints)
         NSLayoutConstraint.activate(titleLabelConstraints)
-      //  NSLayoutConstraint.activate(playButtomConstraints) // Disable Play Button
+        NSLayoutConstraint.activate(playButtomConstraints) // Disable Play Button
     }
 }

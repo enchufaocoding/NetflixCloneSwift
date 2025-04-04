@@ -81,4 +81,11 @@ class HerHeaderUIView: UIView {
     required init?(coder: NSCoder) {
         fatalError()
     }
+    
+    public func configure(with model: TitleViewModel) {
+        // guard let url = URL(string: "https://image.tmdb.org/t/p/w500/\(model.posterURL)") else {return}
+        guard let url = URL(string: "\(Constants.BASE_URL_IMAGE)/\(model.posterURL)") else {return}
+        
+        herImageView.sd_setImage(with: url)
+    }
 }
